@@ -1,0 +1,27 @@
+This is the S-ACOT-MPS code to calculate cross sections for the heavy-flavor hadroproduction
+Please cite K. Xie, J. Campbell, P. Nadolsky, arXiv:1910.xxxxx
+
+We have the LHAPDF format for residual and subtracted PDF
+CT14nnlo_res  CT14nnlo_sub  CT18NNLO_res  CT18NNLO_sub
+
+The Flavor Creation (FC), Flavor Excitation (FE) and Subtraction example are demonstrated.
+
+Usage:
+
+1. Compile the MCFM code:
+cd mcfm
+make
+
+2. Place the PDF files in your LHAPDF directory
+mv CT* $(lhapdf-config --datadir)
+
+3 Calculate the FC, FE and SB terms with the example file
+cd mcfm/Bin
+./run.sh
+
+4. compile the plotter code and plot the results
+cd plotter
+make
+cd ..
+./plotter/plot.sh LHCbBX
+
