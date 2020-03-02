@@ -13,18 +13,22 @@ cd mcfm
 make
 
 2. Place the PDF files in your LHAPDF directory
-mv CT* $(lhapdf-config --datadir)
+The CT18NNLO PDF can be downloaded from Hepforge:
+https://ct.hepforge.org/
+CT14nnlo can be downloaed from LHAPDF:
+https://lhapdf.hepforge.org/pdfsets
 
-3 Calculate the FC, FE and SB terms with the example file
+The subtracted and residual PDFs:
 tar -xzvf CT18NNLO_res.tgz
 tar -xzvf CT18NNLO_sub.tgz
 tar -xzvf CT14nnlo_res.tgz
 tar -xzvf CT14nnlo_sub.tgz
+
+mv CT* $(lhapdf-config --datadir)
+
+3 Calculate the FC, FE and SB terms with the example file
 cd mcfm/Bin
 ./run.sh
-
-The CT18NNLO PDF can be download from:
-https://ct.hepforge.org/
 
 4. compile the plotter code and plot the results
 cd plotter
