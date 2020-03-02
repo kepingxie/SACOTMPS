@@ -21,8 +21,6 @@ You may need to link the corresponding lib and include direcotries in the makefi
 2. Place the PDF files in your LHAPDF directory
 The CT18NNLO PDF can be downloaded from Hepforge:
 https://ct.hepforge.org/
-CT14nnlo can be downloaed from LHAPDF:
-https://lhapdf.hepforge.org/pdfsets
 
 The subtracted and residual PDFs:
 tar -xzvf CT18NNLO_res.tgz
