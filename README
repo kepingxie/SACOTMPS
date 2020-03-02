@@ -16,8 +16,15 @@ make
 mv CT* $(lhapdf-config --datadir)
 
 3 Calculate the FC, FE and SB terms with the example file
+tar -xzvf CT18NNLO_res.tgz
+tar -xzvf CT18NNLO_sub.tgz
+tar -xzvf CT14nnlo_res.tgz
+tar -xzvf CT14nnlo_sub.tgz
 cd mcfm/Bin
 ./run.sh
+
+The CT18NNLO PDF can be download from:
+https://ct.hepforge.org/
 
 4. compile the plotter code and plot the results
 cd plotter
