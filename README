@@ -15,8 +15,8 @@ HOPPET
 Set up the environment variables.
 
 1. Compile the MCFM code:
-cd mcfm
-make
+$ cd mcfm
+$ make
 
 You may need to link the corresponding lib and include direcotries in the makefile.
 
@@ -25,20 +25,21 @@ The CT18NNLO PDF can be downloaded from Hepforge:
 https://ct.hepforge.org/
 
 The subtracted and residual PDFs:
-tar -xzvf CT18NNLO_res.tgz
-tar -xzvf CT18NNLO_sub.tgz
-tar -xzvf CT14nnlo_res.tgz
-tar -xzvf CT14nnlo_sub.tgz
+$ tar -xzvf CT18NNLO_res.tgz
+$ tar -xzvf CT18NNLO_sub.tgz
 
-mv CT* $(lhapdf-config --datadir)
+$ mv CT* $(lhapdf-config --datadir)
 
 3 Calculate the FC, FE and SB terms with the example file
-cd mcfm/Bin
-./run.sh
+
+$ cd mcfm/Bin
+$ ./run.sh
 
 4. compile the plotter code and plot the results
-cd plotter
-make
-cd ..
-./plotter/plot.sh LHCbBX
+The plotter is compiled by g++-7
+$ cd plotter
+$ make
+$ cd ..
+$ ./plotter/plot.sh LHCbBX
+
 
