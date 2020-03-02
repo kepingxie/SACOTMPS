@@ -7,10 +7,16 @@ CT14nnlo_res  CT14nnlo_sub  CT18NNLO_res  CT18NNLO_sub
 The Flavor Creation (FC), Flavor Excitation (FE) and Subtraction example are demonstrated.
 
 Usage:
+0. Install the related package
+LHAPDF
+APPLgrid
+HOPPET
 
 1. Compile the MCFM code:
 cd mcfm
 make
+
+You may need to link the corresponding lib and include direcotries in the makefile.
 
 2. Place the PDF files in your LHAPDF directory
 The CT18NNLO PDF can be downloaded from Hepforge:
