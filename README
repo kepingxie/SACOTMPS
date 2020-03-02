@@ -12,6 +12,8 @@ LHAPDF
 APPLgrid
 HOPPET
 
+Set up the environment variables.
+
 1. Compile the MCFM code:
 cd mcfm
 make
