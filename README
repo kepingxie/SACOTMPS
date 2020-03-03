@@ -9,6 +9,8 @@ The Flavor Creation (FC), Flavor Excitation (FE) and Subtraction example are dem
 Usage:
 0. Install the related package
 LHAPDF
+
+The optional packages
 APPLgrid
 HOPPET
 
